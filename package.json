@@ -4,7 +4,7 @@
   "description": "braveryk7.com css",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass src/sass/ --output dist/css/ --output-style compressed --watch"
+    "sass": "sass src/sass:dist/css --style=compressed --watch --no-source-map"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/braveryk7/braveryk7.com#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "sass": "^1.37.5"
   }
 }
