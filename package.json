@@ -4,7 +4,7 @@
   "description": "braveryk7.com css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass src/sass/ --output dist/css/ --output-style compressed --watch"
   },
   "repository": {
     "type": "git",
