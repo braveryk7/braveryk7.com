@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/braveryk7/braveryk7.com/issues"
   },
-  "homepage": "https://github.com/braveryk7/braveryk7.com#readme"
+  "homepage": "https://github.com/braveryk7/braveryk7.com#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
