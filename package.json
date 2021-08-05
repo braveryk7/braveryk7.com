@@ -1,0 +1,19 @@
+{
+  "name": "braveryk7.com",
+  "version": "1.0.0",
+  "description": "braveryk7.com css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braveryk7/braveryk7.com.git"
+  },
+  "author": "Ken-chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braveryk7/braveryk7.com/issues"
+  },
+  "homepage": "https://github.com/braveryk7/braveryk7.com#readme"
+}
