@@ -99,7 +99,7 @@
     &__gplink {
         & img {
             height: 40px;
-            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
     }
 }
