@@ -1,0 +1,208 @@
+/* faoundation */
+@use "../../foundation/var" as f;
+
+/* アンカータグ */
+a {
+    transition: all .3s ease;
+}
+
+/* ヘッダーナビ */
+#navi-in {
+    background-color: f.$sub_color;
+    width: 100%;
+
+    &a:hover {
+        opacity: 0.8;
+    }
+}
+
+/* 記事・ウィジェットのH2 */
+.entry-content,
+.textwidget {
+    & > h2 {
+        padding: 20px;
+        padding-bottom: 13px;
+        border-bottom: solid 7px f.$sub_color;
+    }
+}
+
+/* 画像のキャプション */
+figcaption {
+    font-size: .8em!important;
+    text-align: center;
+}
+
+/* コメントを書き込むボタン */
+#comment-reply-btn {
+    background-color: f.$main_color;
+    color: #fff;
+}
+
+/* 次のページボタン（ページネーション） */
+.pagination-next-link {
+    background-color: f.$main_color;
+    color: #fff;
+}
+
+/* ページネーション番号ボタン */
+.pagination {
+    & > .page-numbers {
+        background-color: f.$main_color;
+        color: #fff;
+    }
+
+    & > .current {
+        background-color: f.$sub_color;
+        color: #fff;
+    }
+}
+
+/* サイドバーの見出し */
+#sidebar-scroll,
+#sidebar {
+    & > aside {
+        & > h3 {
+            border-bottom: 2px solid f.$main_color;
+            margin-bottom: 15px;
+            padding-bottom: 2px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #555;
+            background-color: #fff;
+        }
+    }
+}
+
+/* カテゴリーウィジェット */
+.widget_categories {
+    & > ul {
+        & > li {
+            & > .children {
+                & > li {
+                    & > a {
+                        border-bottom: 1px dashed #d3d3d3;
+
+                        &:before {
+                            font-family: Font Awesome\ 5 Free;
+                            content: "\f105";
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+            & > a {
+                border-bottom: 1px dashed #d3d3d3;
+
+                &:before {
+                    font-family: Font Awesome\ 5 Free;
+                    content: "\f101";
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+/* フッタータイトル */
+.footer-title {
+    border-bottom: 2px solid f.$main_color;
+    padding-bottom: 2px;
+    font-size: 1.1rem;
+}
+
+/* この記事を書いた人 */
+.author {
+    &-box {
+        border: 0;
+    }
+
+    &-name {
+        & > a {
+            text-decoration: none;
+    
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &-description {
+        font-size: 90%;
+    }
+}
+
+/* ブログカード */
+.blogcard {
+    padding: 1rem;
+    color: #666;
+    position: relative;
+    border-color: f.$sub_color!important;
+
+    &-thumbnail {
+        line-height: 0;
+        overflow: hidden;
+        max-height: 110px;
+    
+        & > img {
+            box-shadow: none;
+        }
+    }
+
+    &-footer {
+        display: none;
+    }
+
+    &:before {
+        content: 'あわせて読みたい';
+        top: -.8rem;
+        left: auto;
+        font-size: 50%;
+        padding: .6em 1em;
+    }
+
+    &:after {
+        content: '続きを読む \00bb';
+        bottom: .5rem;
+        right: 1rem;
+        font-size: 70%;
+        padding: .4em 3em;
+    }
+
+    &:before,
+    &::after {
+        position: absolute;
+        background-color: f.$sub_color;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .blogcard {
+        &-thumbnail {
+            width: 40%;
+            max-height: 5pc;
+        }
+        &-snippet {
+            display: none;
+        }
+    }
+}
+
+/* スマホフッターボタン */
+.mobile-menu-buttons {
+    background: f.$sub_color;
+    color: #fff!important;
+
+    & > li {
+        & > a {
+            color: #fff!important;
+        }
+    }
+}
+
+/* SNSボタンの文字列 */
+.button-caption {
+    display: none!important;
+}
