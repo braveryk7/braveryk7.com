@@ -206,3 +206,10 @@ figcaption {
 .button-caption {
     display: none!important;
 }
+
+/* スマホ表示時のアドミンパネル */
+@media screen and (max-width:480px) {
+    #admin-panel {
+        display: none;
+    }
+}
