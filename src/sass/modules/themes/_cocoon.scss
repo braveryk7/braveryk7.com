@@ -32,6 +32,12 @@ figcaption {
     text-align: center;
 }
 
+/* ソースコード */
+.wp-block-code code {
+    font-family: "Yu Gothic",Meiryo,"Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+    font-size: 14px;
+}
+
 /* コメントを書き込むボタン */
 #comment-reply-btn {
     background-color: f.$main_color;
