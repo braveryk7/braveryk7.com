@@ -20,9 +20,29 @@ a {
 .entry-content,
 .textwidget {
     & > h2 {
-        padding: 20px;
-        padding-bottom: 13px;
-        border-bottom: solid 7px f.$sub_color;
+        background-color: unset;
+        border-bottom: 4px solid #3572f4;
+        border-bottom-right-radius: 25px;
+        border-image: linear-gradient(to right, hsla(221, 90%, 58%, 1) 0%, hsla(221, 90%, 58%, 0.2) 100%);
+        border-image-slice: 1;
+        color: #555555;
+        padding: 0px 10px 4px;
+
+        &:after {
+            content: '';
+            display: inline-block;
+            -webkit-mask-image: url("https://www.braveryk7.com/wp-content/uploads/2021/08/quill-pen.svg");
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+            mask-image: url("https://www.braveryk7.com/wp-content/uploads/2021/08/quill-pen.svg");
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            width: 35px;
+            height: 35px;
+            background-color: hsla(221, 90%, 58%, 0.4);
+            position: absolute;
+            right: 7px;
+        }
     }
 }
 
@@ -34,8 +54,21 @@ figcaption {
 
 /* ソースコード */
 .wp-block-code code {
-    font-family: "Yu Gothic",Meiryo,"Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
     font-size: 14px;
+    transform: rotate(0.03deg);
+    white-space: unset!important;
+}
+.hljs {
+    &::before {
+        font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+        font-size: 14px;
+        transform: rotate(0.03deg);
+    }
+
+    &-comment {
+        font-style: unset;
+    }
 }
 
 /* コメントを書き込むボタン */
