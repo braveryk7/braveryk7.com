@@ -23,8 +23,7 @@ a {
         background-color: unset;
         border-bottom: 4px solid #3572f4;
         border-bottom-right-radius: 25px;
-        border-image: linear-gradient(to right, hsla(221, 90%, 58%, 1) 0%, hsla(221, 90%, 58%, 0.2) 100%);
-        border-image-slice: 1;
+        border-image: linear-gradient(to right, hsla(221, 90%, 58%, 1) 0%, hsla(221, 90%, 58%, 0.2) 100%) 1/0 0 4px 0;
         color: #555555;
         padding: 0px 10px 4px;
 
